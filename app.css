@@ -1,16 +1,81 @@
-*{
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1{
-    font-size: larger;
-    color: blue;
+/* Contenedor principal centrado */
+body {
+    display: flex;
+    flex-direction: column; /* coloca los elementos en columna */
+    align-items: center;   /* centra horizontalmente */
+    justify-content: center; /* centra verticalmente */
+    min-height: 100vh; /* ocupa toda la pantalla */
+    background-color: white; /* un gris suave de fondo */
+    text-align: center; /* centra el texto dentro */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#mensaje{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: brown;
-    color: antiquewhite;
+header {
+      background-color: turquoise;
+      padding: 1rem 2rem;
+      width: 100%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center; /* centra los elementos */
+      gap: 2rem; /* espacio entre enlaces */
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #333; /* efecto hover */
+    }
+
+/* Imagen con ajuste opcional */
+#header {
+    max-width: 100%;
+    height: 350px;
+    margin: 1rem 0;
 }
+#flag {
+    max-width: auto;
+    height: 200px;
+    margin: 1rem 0;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 2rem;
+    color: turquoise;
+    margin: 1rem 0;
+}
+
+/* Caja de mensaje */
+.mensaje {
+    max-width: 600px; /* no se extiende demasiado */
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: turquoise;
+    color: antiquewhite;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+  footer {
+      width: 100%;
+      background-color: turquoise;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 1rem;
+    }
